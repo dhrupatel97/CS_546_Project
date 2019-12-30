@@ -1,0 +1,67 @@
+.navbar {
+    background: black;
+}
+
+.navbar-brand {
+    font-family: cursive;
+}
+
+.container{
+    padding-top: 20px;
+}
+
+.search{
+    padding-top: 20px;
+}
+.card{
+    box-shadow: 10px 10px lightskyblue;
+}
+
+.about-one{
+    border: 15px ;
+    
+}
+.button{
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1{
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button2{
+    
+      border: none;
+   
+    color: rgb(33, 37, 41); 
+    background-color: rgb(89, 112, 6);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+.inside{
+    color: red;
+}

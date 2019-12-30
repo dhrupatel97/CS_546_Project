@@ -1,0 +1,21 @@
+<div class='container'>
+  <div class='jumbotron weather-page'>
+    <fieldset class='fieldset-bg'>
+     {{#if weather}}
+        <h1 class='forecast-name'>Forecast for {{weather.name}}</h1>
+    <p class='weather-info'>Humidity: {{weather.main.humidity }}</p>
+        <p class='weather-info'>Min Temp: {{weather.main.temp_min}} degrees F</p>
+        <p class='weather-info'>Max Temp: {{ weather.main.temp_max}} degrees F</p>
+        <p class='weather-info'>Wind: {{weather.wind.speed}} mph</p>
+        
+      {{/if}}
+    </fieldset>
+    <!-- NEED A BACK BUTTON HERE -->
+
+    <div class='row forecast-back'>
+      <div class='col-12'>
+          <a class="btn btn-light" href="/users/profile" role="button">Back</a>
+      </div>
+    </div>
+  </div>
+</div>

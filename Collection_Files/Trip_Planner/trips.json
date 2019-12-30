@@ -1,0 +1,190 @@
+{ 
+    "_id" : ObjectId("5df574beb764fb13e1d94ecc"), 
+    "name" : "Paris", 
+    "numbe" : "P1", 
+    "description" : "5 Day Tour", 
+    "photo" : "https://i.pinimg.com/originals/78/fd/0c/78fd0c2361163935f6401c73c0020102.jpg", 
+    "activities" : [
+        {
+            "day" : "Day 1", 
+            "do" : "Relax at the hotel after your long and tiring journey with a comfortable  overnight stay."
+        }, 
+        {
+            "day" : "Day 2", 
+            "do" : "To continue exploring Paris through the panoramic city sightseeing, to  popular sights as: Arc De Triomphe, Champs Elysees, Grand Palais, Petit Palais, National Assembly, Alexander Bridge, Concorde Square, Magdalene Church, Opera Garnier, Orsay Museum, Military Academy"
+        }, 
+        {
+            "day" : "Day 3", 
+            "do" : "You could set out for an adventurous and fun-filled time at Disneyland Paris (own expense), where you can experience many thrilling rides and fascinating shows"
+        }, 
+        {
+            "day" : "Day 4", 
+            "do" : "You would visit the Eiffel Tower, the most famous landmark of Paris, enjoy a panoramic view of the  city from its 2nd level."
+        }, 
+        {
+            "day" : "Day 5", 
+            "do" : "You would also enjoy cruising on the River Seine to rediscover the full splendour of the river banks and monuments of Paris Like Notre Dame Cathedral Ile de la cita."
+        }
+    ], 
+    "date" : "2019-12-13"
+}
+{ 
+    "_id" : ObjectId("5df57951b764fb13e1d94ecd"), 
+    "name" : "Paris", 
+    "numbe" : "P2", 
+    "description" : "5 Day Tour", 
+    "photo" : "http://i.imgur.com/ANJjm6x.jpg", 
+    "activities" : [
+        {
+            "day" : "Day 1", 
+            "do" : "A MakeMyTrip representative would greet you at the Airport and help you with check-in at the hotel post Dinner at Indian restaurant. Relax at the hotel after your long and tiring journey with a comfortable  overnight stay."
+        }, 
+        {
+            "day" : "Day 2", 
+            "do" : "To begin with, you would visit the LouvreMuseum  - the house of Mona Lisa. This painting continues to surprise travellers from across the globe."
+        }, 
+        {
+            "day" : "Day 3", 
+            "do" : "You would also enjoy cruising on the River Seine to rediscover the full splendour of the river banks and monuments of Paris Like Notre Dame Cathedral Ile de la cita."
+        }, 
+        {
+            "day" : "Day 4", 
+            "do" : "You would visit the Eiffel Tower, the most famous landmark of Paris, enjoy a panoramic view of the  city from its 2nd level."
+        }, 
+        {
+            "day" : "Day 5", 
+            "do" : "After you would visit the Eiffel Tower, the most famous landmark of Paris, enjoy a panoramic view of the  city from its 2nd level. Built in 1889 and designed by the young engineer Gustave Eiffel, the tower stands 324 meters  (1,063 ft) tall; it is one of the most enduring symbols of France and the industrial age"
+        }
+    ], 
+    "date" : "2019-12-13"
+}
+{ 
+    "_id" : ObjectId("5df57a2fb764fb13e1d94ece"), 
+    "name" : "London", 
+    "numbe" : "L1", 
+    "description" : "4 Day Tour", 
+    "photo" : "https://s2.best-wallpaper.net/wallpaper/2560x1600/1108/London-England_2560x1600.jpg", 
+    "activities" : [
+        {
+            "day" : "Day 1", 
+            "do" : "Welcome to London - a charming city with a royal heritage and incredible wealth of history. With a rich culture and exciting attractions."
+        }, 
+        {
+            "day" : "Day 2", 
+            "do" : "Relax at the hotel after your long and tiring journey with a comfortable overnight stay. Tonight enjoy an Indian Dinner."
+        }, 
+        {
+            "day" : "Day 3", 
+            "do" : "Including sights as the iconic Buckingham Palace, the ever-bustling  Piccadilly Circus, or simply wonder at the sheer architectural marvels of the British imperial times Marble Arch, Hyde Park, Regent Park, Trafalgar Square, Big Ben."
+        }, 
+        {
+            "day" : "Day 4", 
+            "do" : "Houses of Parliament, Westminster Abbey, London Eye and 10 Downing Street (the Prime Minister's residence).  Thereafter, you head to experience the glittering world of fame at one of London's most popular attractions, Madame Tussauds Wax Museum"
+        }
+    ], 
+    "date" : "2019-12-13"
+}
+{ 
+    "_id" : ObjectId("5df57c9fb764fb13e1d94ecf"), 
+    "name" : "London", 
+    "numbe" : "L2", 
+    "description" : "4 Day Tour", 
+    "photo" : "https://www.wallpapers13.com/wp-content/uploads/2016/01/Aerial-photographs-of-the-London-River-Thames-above-Hd-Wallpaper-915x515.jpg", 
+    "activities" : [
+        {
+            "day" : "Day 1", 
+            "do" : "Art your day with a hearty breakfast at the hotel. Later head out on a seat-in-coach basis to enjoy a ride atop the famous London Eye."
+        }, 
+        {
+            "day" : "Day 2", 
+            "do" : "Enjoy iconic imperial British sites such as the Westminster Bridge, the Victoria Embankment and many more."
+        }, 
+        {
+            "day" : "Day 3", 
+            "do" : "In the evening, you would board an overnight ferry headed to the shores of Netherlands, a unique cruising experience that you won't forget."
+        }, 
+        {
+            "day" : "Day 4", 
+            "do" : "you head to experience the glittering world of fame at one of London's most popular attractions, Madame Tussauds Wax Museum."
+        }
+    ], 
+    "date" : "2019-12-13"
+}
+{ 
+    "_id" : ObjectId("5df57cadb764fb13e1d94ed0"), 
+    "name" : "New York ", 
+    "numbe" : "N1", 
+    "description" : "4 Day Tour", 
+    "photo" : "https://wallpaperplay.com/walls/full/0/f/6/267330.jpg", 
+    "activities" : [
+        {
+            "day" : "Day 1", 
+            "do" : "Experience a World class New York hotel located near Grand Central terminal in the Fashionable area of Midtown Manhattan when you check into the Luxurious property. "
+        }, 
+        {
+            "day" : "Day 2", 
+            "do" : "View the world famous iconic Statue symbolizing the country’s freedom. Lunch on own. Make a pit stop to see the “NY BULL” on Wall St. "
+        }, 
+        {
+            "day" : "Day 3", 
+            "do" : "Proceed to go on to the Statue of Liberty Ferry from Battery park."
+        }, 
+        {
+            "day" : "Day 4", 
+            "do" : "Enjoy a scenic view from the top of Freedom tower observation deck. "
+        }
+    ], 
+    "date" : "2019-12-13"
+}
+{ 
+    "_id" : ObjectId("5df57d25b764fb13e1d94ed1"), 
+    "name" : "New York ", 
+    "numbe" : "N2", 
+    "description" : "4 Day Tour", 
+    "photo" : "https://cdn.wallpapersafari.com/28/61/Z2kAxe.jpg", 
+    "activities" : [
+        {
+            "day" : "Day 1", 
+            "do" : "Get a closer look at Rockefeller center comprising of 19 high rise commercial buildings while driving through the famous streets of NY.  "
+        }, 
+        {
+            "day" : "Day 2", 
+            "do" : "This bronze statue weighs 3200 kgs & is a symbol of financial optimism & prosperity. Enjoy a scenic view from the top of Freedom tower observation deck. "
+        }, 
+        {
+            "day" : "Day 3", 
+            "do" : "Declared a national historic monument, you will be able to get quick photos of this landmark. Enjoy shopping time at the biggest grossing next generation retail store in the World ‘APPLE’, a vibrant gathering place for technology buffs  Dinner at Indian Restaurant"
+        }, 
+        {
+            "day" : "Day 4", 
+            "do" : "See New York at its best from a double-decker bus. In “The City that Never Sleeps,” the best sightseeing happens after the sun goes down. Discover the brilliant lights, stunning views and vibrant nightlife with double-decker Night Tour! Overnight at hotel "
+        }
+    ], 
+    "date" : "2019-12-13"
+}
+{ 
+    "_id" : ObjectId("5df57ecfb764fb13e1d94ed2"), 
+    "name" : "Bali ", 
+    "numbe" : "B1", 
+    "description" : "4 Day Tour", 
+    "photo" : "https://www.thedelhitours.com/images/slider/6.jpg", 
+    "activities" : [
+        {
+            "day" : "Day 1", 
+            "do" : " Pick up from your hotel, drive to the western shore of Bali where the Tanah Lot temple is located. Along the way, stops are made at Taman Ayun, which is the Mother Temple of Mengwi Kingdom. 'Taman', in English means “garden”, and 'Ayun'or 'Ayu' is 'beautiful'. "
+        }, 
+        {
+            "day" : "Day 2", 
+            "do" : "you will be transferred to Seminyak for a different stay experience in a Villa. The day is at leisure to enjoy the villa and its surroundings.  "
+        }, 
+        {
+            "day" : "Day 3", 
+            "do" : "Enjoy breakfast at the hotel. Later the day is at leisure to enjoy the optional activities. Enjoy your last day in Bali buying something for yourself or your loved ones back home"
+        }, 
+        {
+            "day" : "Day 4", 
+            "do" : "Later proceed for the Half day Tanah Lot Tour. Pick up from your hotel, drive to the western shore of Bali where the Tanah Lot temple is located. "
+        }
+    ], 
+    "date" : "2019-12-13"
+}

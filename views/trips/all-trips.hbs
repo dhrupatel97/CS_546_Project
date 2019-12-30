@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+<div class="card-deck">
+    {{#if isLoggedIn}}
+    {{#if list}}
+    {{#each list}}
+    <div class="card" style='width: 25em;'>
+        <img class="card-img-top" src="{{photo}}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <h2 class="card-head">Tour {{numbe}}</h2>
+            <p class="card-text">{{description}}</p>
+            <a href='/trips/itinerarys/{{numbe}}' class='btn btn-primary'>View</a>
+        </div>
+    </div>
+    {{/each}}
+    {{else}}
+    <h3>No available Trips for the search.
+             <span class='inside'>Note: You can create your own itinerary from your Profile.</span>
+    </h3>
+    {{/if}}
+    {{else}}
+    <h1>You are  Not Authorized to Access. Please Login.</h1>
+    <div class="container">
+        <a href="/users/login" class='button'>Login</a>
+    </div>
+    {{/if}}
+</div>
+</div>
+</div>

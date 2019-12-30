@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+<div class="card-deck">
+    {{#each list}}
+    <div class="card" style='width: 25em;'>
+        <img class="card-img-top" src="{{photo}}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <h2 class="card-head">Tour {{numbe}}</h2>
+            <p class="card-text">{{description}}</p>
+            <a href='/trips/{{id}}' class='btn btn-primary'>Know More</a>
+        </div>
+    </div>
+    {{/each}}
+</div>
+</div>
+</div>

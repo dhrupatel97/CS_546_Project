@@ -1,0 +1,25 @@
+<div class='container iti-container'>
+  <div class="row">
+    <div class="col-12 .col-sm-6 .col-md-8">
+      <div class='about-one'>
+        {{#each list}}
+        <h3> Tour: {{name}}</h3>
+        <br>
+        {{#each activities}}
+        <div class="col-sm-6 col-sm-offset-3">
+          {{day}}: {{do}}
+          <hr>
+        </div>
+        {{/each}}
+        <div class='row'>
+          <div class='col-4'>
+          </div>
+          <div class='col-4'>
+          </div>
+        </div>
+         {{/each}}
+      </div>
+    </div>
+    <a href='/' class='btn btn-primary'>Back</a>
+  </div>
+</div>

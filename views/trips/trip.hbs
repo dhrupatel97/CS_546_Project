@@ -1,0 +1,151 @@
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqnz4mGqJTVkiDhbWySMVzAUxOM-484WU&callback=initMap">
+</script>
+<div class='container trip-page'>
+    <div class='row'>
+        <div class='col-6'>
+            <h1>{{trip.name}}</h1>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col-4'>
+            <h2>Destination: {{trip.locale}}</h2>
+        </div>
+       <div class='col-4'>
+                <div class='add-activity-tripejs'>
+                    <a class='button2' data-toggle="modal" data-target="#exampleModal">Add Activity</a>
+                </div>
+                <br>
+        </div>
+        <div class='col-4 forecast-btn'>
+            <a id="weatherlink"  class='button1' href="/weather/{{trip.locale}}">Get Forecast</a>
+        </div>
+    </div>
+  <div class='list-group list-group-flush'>
+      {{#if activity}}
+      {{#activity}}
+        <div class="card" style="width: 90%;">
+            <div class="card-body">
+              <div class='row'>
+                <div class='col-6'>
+                  <h3 class="card-title">Place: {{this.place}}</h3>
+                </div>
+                <div class='col-6 date-show'>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-12'>
+                  <h3 class="card-subtitle mb-2 text-muted">Address: {{this.address}}</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class='col-6'>
+                  <p class="card-text">Date: {{this.date}}</p>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-6'>
+                  <p class="card-text">Time: {{this.time}}</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <br>
+        {{/activity}}
+        {{else}}
+        <h2>No Activity at the moment</h2>
+        {{/if}}
+  </div>
+</div>
+
+
+<!-- MODAL - ADD ACTIVITY --> 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Activity</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="new-activity-form" action="/trips/{{trip.id}}/activity" method="POST">
+                        <div class="form-group">
+                            <label for="name">Place*</label>
+                            <input type="text" id='name' class="form-control place-name" value="" name="place">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id='address' class="form-control address-name" value="" name="address">
+                        </div>
+                        <div class="form-group" data-provide="datepicker">
+                                <label for="date">Date*</label>
+                                <input id='date' type="text" class="form-control" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="local">Time</label>
+                            <input type="text" id='local' class="form-control" name="time">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <input type="textarea" id='description' class="form-control" name="description">
+                        </div>
+                        <button id="add" type="submit" class="btn btn-primary">Add Activity</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+        
+        var weather = $('#weather') 
+        weather.on('click', function(e) {
+        e.preventDefault()
+        var locale = trip.locale
+        $.ajax({
+            url: `/weather/${locale}`,
+            method: 'get'
+        })
+        .done((res) => {
+            redirect('/weather', res)
+            })
+        })
+
+
+    var globalActivityId
+    // DATEPICKER
+        $('.datepicker').datepicker({
+            format: 'mm/dd/yyyy',
+            startDate: '-3d'
+        })
+
+    // ADD ACTIVITY
+        var $newActivityForm = $('#new-activity-form')
+
+        $newActivityBtn.on('click', function() {
+            $('#newActivityModal').modal()
+        })
+
+
+        $('#add').on('submit', (evt) => {
+            console.log('you clicked')
+            var formData = {
+                "place": $('input[name=place]').val(),
+                "address": $('input[address]').val(),
+                "date": $('input[name=date]').val(),
+                "time": $('input[name=time]').val(),
+                "description": $('input[name=description]').val()
+            }
+            $.ajax({
+                url: '/trips/{{trip.id}}/activity',
+                method: 'POST',
+                data: JSON.stringify(formData),
+                contentType: 'application/json',
+            })
+        })
+
+</script>

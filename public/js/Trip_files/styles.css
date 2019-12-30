@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+/* Styles for the profile.ejs page */
+.profile {
+    margin-top: 2rem; 
+}
+
+.trip {
+    border: 1px solid black;
+    border-radius: 6px; 
+}
+
+.trip-name {
+    margin-top: 1rem; 
+}
+
+.trip-loc {
+    margin-top: 1rem; 
+}
+
+.trip-des {
+    margin-top: 1rem; 
+}
+
+.trip-button {
+    margin-top: 1rem; 
+}
+
+/* Styles for the trip.ejs page */
+.trip-page {
+    margin-top: 2rem; 
+}
+
+.day {
+    border: 1px solid black;
+    border-radius: 6px; 
+}
+
+.activities {
+    margin-left: 4rem; 
+}
+
+/* Navbar styles */
+.navbar-brand {
+    font-size: 2.5rem; 
+    font-family: 'Lobster Two', cursive;
+    padding-top: 0!important; 
+    padding-left: 2rem; 
+}
+
+.nav-item {
+    font-size: 1.2rem; 
+    padding-right: 1rem; 
+}
+
+.navbar {
+    background: rgb(109,179,242); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 82%, rgba(54,144,240,1) 82%, rgba(30,105,222,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 82%,rgba(54,144,240,1) 82%,rgba(30,105,222,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 82%,rgba(54,144,240,1) 82%,rgba(30,105,222,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
+}
+
+/* Home page  */
+.carousel-caption {
+    position: absolute; 
+    padding-bottom: 35rem; 
+}
+
+.canyon {
+    position: absolute; 
+    padding-bottom: 25rem!important; 
+}
+
+/* All Trips Page */
+
+@media only screen and (max-width:992px) {
+    .card-box {
+        width: 355px;
+        margin: 0 auto; 
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .card-box {
+        width: 710px;
+        margin: 0 auto; 
+    }
+}
+
+
+@media only screen and (min-width:1200px) {
+    .card-box {
+        width: 1065px;
+        margin: 0 auto; 
+    }
+}
+
+.card {
+    display: inline-block;
+    margin: 15px;
+    
+}
+
+.card-height {
+    height: 375px;
+}
+
+/* Yelp Search Results */
+
+.select-button {
+    clear: both;
+    float:right;
+    margin-right: 15px;
+}
+
+.the-name {
+    display: inline;
+}
+
+.card-width {
+    width: 100%;
+    margin: 10px auto;
+}
+
+#search-res {
+    margin: 0 auto;
+    padding: 50px;
+}
+}

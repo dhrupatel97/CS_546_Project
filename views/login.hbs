@@ -1,0 +1,42 @@
+<div class='container login-container'>
+    <div class='jumbotron matchy-jumbo'>
+        <div class='row'>
+            <div class='col-8'>
+                <p>Don't have an account? <a href="/users/signup" class='button1'>Sign Up</a></p>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-sm-offset-3">
+
+            {{#if message}}
+                <div class='alert alert-danger'>{{message}}</div>
+            {{/if}}
+
+            <h1>Login</h1>
+
+            <form action="/users/login" method="post">
+                <div class="form-group">
+                    <label for='email'>Email</label>
+                    <input type="text" placeholder='Email' id='email' class="form-control" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for ='password'>Password</label>
+                    <input type="password" placeholder='Password' id='password' class="form-control" name="password" required>
+                </div>
+
+                <button type="submit" class="button">Login</button>
+            </form>
+
+            <hr>
+        </div>
+        <div class='row'>
+            <div class='col-4'>
+            </div>
+            <div class='col-4 login-home'>
+                    <a class="btn btn-light" href="/" role="button">Home</a>
+            </div>
+            <div class='col-4'>
+            </div>
+        </div>
+    </div>
+</div>

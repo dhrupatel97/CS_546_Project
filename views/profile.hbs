@@ -1,0 +1,119 @@
+<div class='container profile'>
+  <div class='row'>
+  </div>
+  <div class='row'>
+      <div class='col-12'>
+          <h1>{{user.name}}'s Planner</h1>
+      </div>
+       <div class='col-12 new-trip-button-div'>
+      <button type="button" class="button" data-toggle="modal" data-target="#exampleModal" style="text-align: left;">
+        Create Your Personal Trip                
+      </button>
+      <hr>
+    </div>
+  </div>
+  <div class='list-group list-group-flush'>
+      {{#each trip}}
+        <div class="card" style="width: 90%;">
+            <div class="card-body">
+              <div class='row'>
+                <div class='col-6'>
+                  <h2 class="card-title">Trip Name: {{name}}</h2>
+                </div>
+                <div class='col-6 date-show'>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-12'>
+                  <h3 class="card-subtitle mb-2 text-muted">Location: {{locale}}</h3>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-6'>
+                  <p class="card-text">Description: {{description}}</p>
+                </div>
+                <div class='col-6 details-show'>
+                  <a href="/trips/{{id}}" class='button'>View Trip Itinerary</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <br>
+      {{/each}}
+  </div>
+  <div class='col-6 details-show'>
+                  <a class="button" href="/">Search for a Trip</a>
+                </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">New Trip</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="/users/profile" method="POST">
+          <div class="form-group">
+            <label for="name">Trip Name*</label>
+            <input type="text" id='name' class="form-control" name="name" required>
+        </div>
+          <div class="form-group" data-provide="datepicker">
+            <label for="startDate">Start Date*</label>
+            <input type="text" id='startDate' class="form-control" name="startDate" required>
+        </div>
+        <div class="form-group" data-provide="datepicker">
+            <label for="endDate">End Date*</label>
+            <input type="text" id='endDate' class="form-control" name="endDate" required>
+        </div>
+          <div class="form-group">
+            <label for="local">Location*</label>
+            <input type="text" id='local' class="form-control" name="locale" required>
+        </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <input type="textarea" id='description' class="form-control" name="description">
+        </div>
+        <button id="submit" type="submit" class="btn btn-primary">Add Your Trip</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Datepicker
+$('.datepicker').datepicker()
+$('.datepicker').datepicker({
+  format: 'mm/dd/yyyy',
+  startDate: '-3d'
+})
+$('.datepicker').datepicker({
+  startDate: '-3d'
+})
+
+$('#submit').on('submit', (evt) => {
+  console.log('you clicked something')
+  var formData = {
+    "name": $('input[name=name').val(),
+    "length": $('input[name=length').val(),
+    "locale": $('input[name=locale').val()
+  }
+  $.ajax({
+    url: '/users/profile',
+    method: 'POST',
+    data: formData,
+    dataType: 'json'
+  })
+  .done((data) => {
+    console.log(data)
+  })
+  evt.preventDefault()
+  })
+</script>

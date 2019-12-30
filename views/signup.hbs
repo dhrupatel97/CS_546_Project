@@ -1,0 +1,51 @@
+<div class='container signup-container'>
+    <div class='jumbotron matchy-jumbo'>
+
+            <div class='row'>
+                <div class='col-12'>
+                    <p>Already have an account? <a href="/users/login" class='button1'>Log In</a></p>
+                </div>
+            </div>
+
+        <div class="col-sm-6 col-sm-offset-3">
+
+            {{#if message}}
+                <div class='alert alert-danger'>{{message}}</div>
+            {{/if}}
+
+            
+                <h1>Signup</h1>
+            
+                <form action="/users/signup" method="post">
+                    <div class="form-group">
+                        <label for='name'>Name</label>
+                        <input type="text"  id='name' placeholder='Name' class="form-control" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for='email'>Email</label>
+                        <input type="email"  id='email' placeholder='Email' class="form-control" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for='password'>Password</label>
+                        <input type="password" id='password' placeholder='Password' class="form-control" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for='confirm password'>Confirm Password</label>
+                        <input type="password" id='confirm password' placeholder='Confirm Password'  class="form-control" name="passwordConfirmation" required>
+                    </div>
+                    <div class='row signup-signup'>
+                        <div class='col-12'>
+                            <button type="submit" class="button">Signup</button>
+                        </div>
+                    </div>
+                </form>
+            
+                <hr>
+        </div>
+        <div class='row signup-home'>
+            <div class='col-12'>
+                <a class="btn btn-light signup-home" href="/" role="button">Home</a>
+            </div>
+        </div>
+    </div>
+</div>
